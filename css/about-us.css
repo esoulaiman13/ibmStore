@@ -1,0 +1,102 @@
+/*
+    set styles 
+*/
+
+.about{
+    height: 750px !important;
+}
+.product-details-container{
+    width: 100%;
+    height: 600px;
+    margin: 50px 0;
+    display: flex;
+}
+.product-details-container .images-container{
+    width: 100% !important;
+    height: 600px;
+    
+}
+.product-details-container .images-container .imgs-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.product-details-container .images-container .imgs-container .zoomed-img{
+    width: 90%;
+    height: 65%;
+    margin: 19px 30px;
+    position: relative;
+
+}
+.product-details-container .images-container .imgs-container .zoomed-img img{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 320px)and (max-width: 991px){
+    .about{
+        height: unset !important;
+    }
+    .product-details-container{
+        width: 100%;
+        height: 1060px;
+        margin: 0;
+        display: block;
+    }
+    .product-details-container .images-container{
+        width: 100% !important;
+        height: unset;
+    }
+    .product-details-container .images-container .imgs-container .zoomed-img{
+        margin: auto;    
+    }
+}
+/*****************************************/
+
+.product-details-container .details-container{
+    width: 100% !important;
+    height: 600px;
+    padding: 0 0 0 60px ;
+}
+.product-details-container .details-container h2{
+    font-size: 16px;
+    margin: 0 0 25px 0 ;
+}
+.product-details-container .details-container p{
+    margin: 30px 0;
+    font-size: 15px;
+    line-height: 1.7;
+    font-style: italic;
+    color: teal;
+}
+/*-----------------------------------------------*/
+.product-details-container .details-container .share{
+    color: teal;
+    text-transform: capitalize;
+    word-spacing: 3px;
+}
+.product-details-container .details-container .share{
+    margin: 30px 0;
+}
+.product-details-container .details-container .share a{
+    color: teal;
+    font-size: 20px;
+}
+.product-info a{
+    color: #3a8bcd !important;
+    text-transform: capitalize !important;
+}
+
+@media (min-width: 320px)and (max-width: 991px){
+    .product-details-container .details-container{
+        width: 100% !important;
+        height: 600px;
+        padding: 0;
+    }
+    .product-details-container .details-container h2{
+        margin: 20px 0 0 0 ;
+    }
+    .product-details-container .details-container p{
+        margin: 5px 0;
+    }
+}

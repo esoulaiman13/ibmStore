@@ -1,0 +1,650 @@
+
+*{
+    margin     : 0;
+    padding    : 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .container{
+        width    : 1170px;
+        margin   : auto;
+    }
+    @media (min-width: 320px){
+        .container{
+            width: 290px;
+            margin: auto;
+        }
+    }
+    @media (min-width: 576px){
+        .container{
+            width: 546px;
+            margin: auto;
+        }
+    }
+    @media (min-width: 768px){
+        .container{
+            width: 738px;
+            margin: auto;
+        }
+    }
+    @media (min-width: 992px){
+        .container{
+            width: 962px;
+            margin: auto;
+        }
+    }
+    @media (min-width:1200px){
+        .container{
+            width: 1170px;
+            margin: auto;
+        }
+    }
+
+.clear-fix{
+    clear   : both;
+}
+/*///////////////////////////////////////////start styles*/
+
+
+/*///////////////////////////////////////////start top head title styles*/
+.heading-head{
+    background-color  : #3a8bcd;
+    text-align        : center;
+}
+.heading-head .head-title {
+    padding  : 12px;
+}
+.heading-head .head-title span{
+    color          : white;
+    font-size      : 14px;
+    font-family    : Arial, Helvetica, sans-serif;
+    text-transform : capitalize;
+}
+
+/*///////////////////////////////////////////start top head logo styles*/
+.company-logo{
+    overflow: hidden;
+}
+.company-logo .logo-container .logo{
+    margin: auto;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.company-logo .logo-container .logo img{
+    margin  : 20px 40%;
+    width   : 220px;
+    height  : 90px;
+}
+.company-logo .logo-container .nav-button{
+    display: none;
+}
+@media (min-width:320px) and (max-width: 991px){
+    .company-logo .logo-container .logo img{
+        margin: 15px 0%;
+        width: 141px;
+        height: 60px;
+    }
+    .company-logo .logo-container .nav-button{
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: right;
+    }
+    .company-logo .logo-container .nav-button button{
+        border: none;
+        background-color: #3a8bcd;
+        margin: 24px  0px;
+        padding: 3px 7px;
+        border-radius: 5px;
+    }
+    .company-logo .logo-container .nav-button .fa-bars{
+        font-size: 40px;
+        color: white;
+}
+}
+@media (min-width:992px){
+    .company-logo .logo-container .logo{
+        margin: auto;
+        width: 100%;
+        float: left;
+        overflow: hidden;
+    }
+    .company-logo .logo-container .logo img{
+        margin  : 20px 40%;
+        width   : 220px;
+        height  : 90px;
+    }
+    .company-logo .logo-container .nav-button{
+        display: none;
+    }
+}
+/*///////////////////////////////////////////nav bar styles*/
+.nav-bar{
+    border-top: 1px solid #eee;
+    display: block ;
+}
+.nav-bar nav{
+    display         : flex;
+    justify-content : space-around;
+}
+.nav-bar nav ul{
+    padding  : 0;
+    margin   : 0;
+    display  : flex;
+}
+.nav-bar nav ul li{
+    padding        : 15px;
+    list-style     : none;
+    font-size      : 18px;
+    font-weight    : bold;
+    font-family    : Arial, Helvetica, sans-serif;
+    text-transform : uppercase;
+}
+@media (min-width:320px)and (max-width: 991px){
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar nav ul{
+        display  : block;
+    }
+    .nav-bar nav ul li{
+        text-align: center;
+    }
+}
+@media (min-width:992px){
+    .nav-bar{
+        display: block !important;
+    }
+}
+/*///////////////////////////////////////////start top front infos styles*/
+.top-front{
+    overflow         : hidden;
+    width            : 100%;
+    height           : 550px;
+    margin-bottom    : 30px;
+    background-image : url(../images/banner-bg.jpg);
+    background-size  : 100% 100%;
+}
+.top-front .top-infos{
+    overflow        : hidden;
+    width           : 420px;
+    height          : 340px;
+    margin          : 170px 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.top-front .top-infos .info-header h1{
+    margin-top  : 30px;
+    font-size   : 25px;
+    font-weight : bold;
+    font-family : Arial, Helvetica, sans-serif;
+    text-align  : center;
+}
+.top-front .top-infos .info-header .solid{
+    border-bottom : 5.5px solid #3a8bcd;
+    width         : 40px;
+    margin        : 10px 10%;
+}
+.top-front .top-infos .info-paragraph {
+    padding     :7px 8%;
+}
+.top-front .top-infos .info-paragraph p{
+    font-size   : 14px;
+    line-height : 1.7;
+    color       : rgba(24, 26, 26, 0.561);
+}
+.top-front .top-infos .info-paragraph p:last-of-type{
+    margin : 20px 0;
+}
+.top-front .top-infos .info-paragraph p:last-of-type a{
+    text-decoration : none;
+    color           : #3a8bcd;
+}
+.button-container button{
+    padding           : 14px 25px;
+    margin            : 0 8%;
+    text-transform    : uppercase;
+    background-color  : #3a8bcd;
+    color             : #fff;
+    border            : none;
+    border-radius     : 5px;
+}
+@media (min-width: 320px)and (max-width: 991px){
+    .top-front{
+        height   : 400px;
+    }
+    .top-front .top-infos{
+        width    : 290px;
+        margin   : 30px 0px;
+    }
+    .top-front .top-infos .info-header h1{
+        margin-top  : 10px;
+        font-size   : 20px;
+    }
+    .top-front .top-infos .info-header .solid{
+        margin        : 10px 13px;
+    }
+    .top-front .top-infos .info-paragraph p{
+        line-height : 1.6;
+    }    
+}
+@media (min-width: 567px)and (max-width: 991px){
+    .top-front .top-infos{
+        width    : 400px;
+        margin   : 30px 0px;
+    }
+    .top-front .top-infos .info-header h1{
+        font-size   : 22px;
+    }
+    .top-front .top-infos .info-paragraph p{
+        line-height : 1.7;
+    }    
+}
+/*///////////////////////////////////////////start featured items*/
+.featured-items{
+    overflow : hidden;
+    height   : 600px;
+}
+.featured-items h1{
+   margin-top     :15px ;
+   margin-bottom  : 40px; 
+   font-size      : 20px;
+   text-transform : capitalize;
+}
+.featured-items .container{
+    overflow   : hidden;
+    position: relative;
+}
+.featured-items .items-container{
+    width        : 100%;
+    height       : 360px;
+    overflow     : hidden;
+    transition   : all 1s;
+    -webkit-transition : all 1s;
+    -o-transition      : all 1s;
+    -ms-transition     : all 1s;
+    display      : flex;
+    overflow     : hidden;
+}
+.featured-items .items-container .item{
+    overflow     : hidden;
+    width        :250px;
+    height       : 350px;
+    float        : left;
+    margin       : 5px 20px;
+    border       : 1px solid #ccc;
+    border-radius: 5px;
+    position     : relative;
+    cursor       : pointer;
+}
+.featured-items .items-container .item .itemContainer {
+    width  : 90%;
+    height : 250px;
+    margin : 5%;
+}
+.featured-items .items-container .item .itemContainer img{
+    width  : 100%;
+    height : 250px;
+}
+.featured-items .items-container .item .itemContainer .infos h3 {
+    text-transform : capitalize;
+    font-size      : 18px;
+    margin         : 12px 0;
+}
+.featured-items .items-container .item .itemContainer .infos span {
+    font-weight : bold;
+    color       : #3a8bcd;
+}
+.scroling-buttons {
+    display         : flex;
+    justify-content : center;
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+.scroling-buttons .buttons {
+    display         : flex;
+    justify-content : space-between;
+}
+.scroling-buttons .buttons button{
+    width            : 60px;
+    height           : 60px;
+    background-color : #3a8bcd;
+    border           : 1px solid #ccc;
+    border-radius    : 5px;
+    cursor           : pointer;
+}
+.scroling-buttons .buttons #btnLeft{
+    margin-right     : 1047px;
+}
+.scroling-buttons .buttons button .fa-angle-left,
+.scroling-buttons .buttons button .fa-angle-right
+{
+    font-size  : 60px;
+    color      : white;
+}
+@media (min-width: 320px)and (max-width:575px){
+    .scroling-buttons {
+        top: 250px;
+    }
+    .scroling-buttons .buttons button{
+        width            : 40px;
+        height           : 40px;
+    }
+    .scroling-buttons .buttons #btnLeft{
+        margin-right     : 208px;
+    }
+    .scroling-buttons .buttons button .fa-angle-left,
+    .scroling-buttons .buttons button .fa-angle-right
+    {
+        font-size  : 40px;
+    }
+}
+@media (min-width: 576px)and (max-width: 767px){
+    .scroling-buttons {
+        top: 250px;
+    }
+    .featured-items .items-container{
+        width        : 100%;
+        height       : 410px;
+    }
+    .featured-items .items-container .item{
+        width        : 350px;
+        height       : 400px;
+        float        : left;
+        margin       : 6px 104px;
+        border       : 1px solid #ccc;
+        border-radius: 5px;
+        position     : relative;
+        cursor       : pointer;
+    }
+    .featured-items .items-container .item .itemContainer {
+        width  : 90%;
+        height : 250px;
+        margin : 5%;
+    }
+    .featured-items .items-container .item .itemContainer img{
+        width  : 100%;
+        height : 310px;
+    }
+    .scroling-buttons .buttons button{
+        width            : 45px;
+        height           : 45px;
+    }
+    .scroling-buttons .buttons #btnLeft{
+        margin     : 0 450px  0 4px;
+    }
+    .scroling-buttons .buttons button .fa-angle-left,
+    .scroling-buttons .buttons button .fa-angle-right
+    {
+        font-size  : 45px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .featured-items .items-container{
+        width        : 100%;
+        height       : 365px;
+    }
+    .featured-items .items-container .item{
+        width        : 250px;
+        height       : 352px;
+        float        : left;
+        margin       : 6px 58px;
+        border       : 1px solid #ccc;
+        border-radius: 5px;
+        position     : relative;
+        cursor       : pointer;
+    }
+    .featured-items .items-container .item .itemContainer {
+        width  : 90%;
+        height : 250px;
+        margin : 5%;
+    }
+    .scroling-buttons .buttons button{
+        width            : 50px;
+        height           : 50px;
+    }
+    .scroling-buttons .buttons #btnLeft{
+        margin     : 0 633px  0 4px;
+    }
+    .scroling-buttons .buttons button .fa-angle-left,
+    .scroling-buttons .buttons button .fa-angle-right
+    {
+        font-size  : 50px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .featured-items .items-container .item{
+        width        : 223px;
+        margin       : 6px 8px;
+    }
+    .scroling-buttons .buttons #btnLeft{
+        margin       : 0 840px  0 0px;
+    }
+
+}
+/*//////////////////////////////////////////////////start subscribe styles////////////////////////*/
+.subsecribe{
+    overflow        : hidden;
+    height          : 400px;
+    margin: 30px 0 0 0;
+    background-color: #3a8bcd;
+    color           : #fff;
+}
+.subsecribe .solid{
+    border-bottom   : 5.5px solid #fff;
+    margin          :100px auto;
+    margin-bottom   :0 ;
+}
+.subsecribe .sub-container h1{
+    text-align     : center;
+    text-transform : capitalize;
+    margin         : 20px;
+    font-size      : 23px;
+    font-weight    : 600;
+}
+.subsecribe .sub-container p{
+    width          : 70%;
+    margin         : auto;
+    margin-top     : 40px;
+    font-size      : 19px;
+    text-align     : center;
+    line-height    : 1.5;
+}
+.subsecribe .sub-container form{
+    width          : 60%;
+    margin         : 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.subsecribe .sub-container form input{
+    padding       : 10px;
+    margin        : auto;
+    font-size     : 20px;
+    border-radius : 10px;
+    border        : 1px solid #ccc;
+}
+.subsecribe .sub-container form input:nth-of-type(1){
+    width            : 60%;
+    background-color : transparent;
+    color            : #fff;
+}
+.subsecribe .sub-container input:nth-of-type(2){
+    width            : 30%;
+    background-color : #fff;
+    color            : #3a8bcd;
+    cursor           : pointer;
+}
+::placeholder{
+    color   : white;
+}
+@media (min-width: 320px)and (max-width: 575px){
+    .subsecribe .solid{
+        margin         : 28px auto !important;
+    }
+    .subsecribe .sub-container h1{
+        margin         : 10px;
+        font-size      : 17px;
+    }
+    .subsecribe .sub-container p{
+        margin-top     : 15px;
+        font-size      : 15px;
+        line-height    : 1.5;
+    }
+    .subsecribe .sub-container form{
+        width          : 100%;
+        margin         : 30px auto;
+        display: block
+    }
+    .subsecribe .sub-container form input{
+        margin        :7px auto;
+    }
+    .subsecribe .sub-container form input:nth-of-type(1){
+        width            : 90%;
+    }
+    .subsecribe .sub-container input:nth-of-type(2){
+        width            : 100%;
+    }    
+}
+
+@media (min-width: 576px)and (max-width: 991px){
+    .subsecribe .solid{
+        margin         : 28px auto !important;
+    }
+    .subsecribe .sub-container h1{
+        margin         : 10px;
+        font-size      : 17px;
+    }
+    .subsecribe .sub-container p{
+        margin-top     : 15px;
+        font-size      : 15px;
+        line-height    : 1.5;
+    }
+    .subsecribe .sub-container form{
+        width          : 100%;
+        margin         : 30px auto;
+        display: block
+    }
+    .subsecribe .sub-container form input{
+        margin        :7px auto;
+    }
+    .subsecribe .sub-container form input:nth-of-type(1){
+        width            : 90%;
+    }
+    .subsecribe .sub-container input:nth-of-type(2){
+        width            : 94%;
+    }    
+}
+@media (min-width: 992px)and (max-width: 1199px){
+
+    .subsecribe .sub-container input:nth-of-type(2){
+        font-size: 17px;
+    } 
+}
+/*///////////////////////////////////////////////////////////////start footer ///*/
+.footer{
+    overflow: hidden;
+}
+.footer .footer-logo{
+    margin: auto;
+}
+.footer .footer-logo img{
+    margin  : 20px 40%;
+    width   : 220px;
+    height  : 90px;
+}
+/*-----------------------nav---------------*/
+.footer .footer-nav{
+    width  : 100%;
+    margin : 30px;
+}
+.footer .footer-nav ul{
+    display         : flex;
+    justify-content : center;
+}
+.footer .footer-nav ul li{
+    list-style   : none;
+    margin       : 0 10px;
+}
+.footer .footer-nav ul li a{
+    text-decoration  : none;
+    color            : teal;
+    text-transform   : uppercase;
+    font-size: 14px;
+}
+@media (min-width: 320px)and (max-width: 575px){
+
+    .footer .footer-nav ul{
+        display         : block;
+        justify-content : left;
+    }
+    .footer .footer-nav ul li{
+        list-style: disc;
+        margin       : 10px;
+    }
+    .footer .footer-logo img{
+        margin  : 0 39px;
+    }
+}
+@media (min-width: 575px)and (max-width: 767px){
+    .footer .footer-nav ul{
+        display         : block;
+        justify-content : left;
+    }
+    .footer .footer-nav ul li{
+        list-style: disc;
+        margin       : 10px;
+    }
+    .footer .footer-logo img{
+        margin  : 0 170px;
+    }
+}
+/*-------------------social media----------------*/
+.socialMediaIcons .icons{
+    display           : flex;
+    justify-content   : center;
+}
+
+.socialMediaIcons .icons .fa-facebook,
+.socialMediaIcons .icons .fa-twitter,
+.socialMediaIcons .icons .fa-rss,
+.socialMediaIcons .icons .fa-linkedin{
+    font-size : 30px;
+    color     : #3a8bcd; 
+    margin    : 20px;
+}
+footer .copyRights{
+    margin-top    : 30px;
+    padding       : 25px;
+    font-size     : 12px;
+    border-top    : 1px solid #eee;
+    text-align    : center;
+    color         : teal;
+}
+.copyRights a {
+    text-decoration  : none;
+    color            : #3a8bcd;
+}
+
+/*********************************************frame work*****************************/
+.solid{
+    border-bottom : 5.5px solid #3a8bcd;
+    width         : 40px;
+
+}
+ a{
+    text-decoration : none;
+    text-transform  : uppercase ;
+    font-size       : 14px;
+    color           : black;
+}
+.active{
+    color           :#3a8bcd !important
+}
+.abs{
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           :250px;
+    height          : 350px;
+}
